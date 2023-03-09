@@ -4,7 +4,7 @@
     padding: 0 10px;
   }
   .header {
-    .header__content {
+    &__content {
       background-color: transparent;
       justify-content: center;
       .header__info {
@@ -13,10 +13,10 @@
     }
   }
   .latest-offers {
-    .latest-offers__grid {
+    &__grid {
       display: block;
     }
-    .latest-offers__item {
+    &__item {
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -29,25 +29,25 @@
         padding: 10px;
       }
     }
-    .latest-offers__item-2,
-    .latest-offers__item-3 {
+    &__item-2,
+    &__item-3 {
       justify-content: flex-start;
       flex-direction: row-reverse;
     }
   }
   .most-saled {
-    .most-saled__flex {
+    &__flex {
       justify-content: space-around;
     }
-    .most-saled__card:not(:last-child) {
+    &__card:not(:last-child) {
       margin-right: 0;
     }
   }
   .footer{
-    .footer__flex{
+    &__flex{
       flex-direction: column-reverse;
     }
-    .footer__logo{
+    &__logo{
       margin-top: 15px;
     }
   }
@@ -59,7 +59,7 @@
   }
   .header {
     position: relative;
-    .header__menu {
+    &__menu {
       justify-content: space-evenly;
       align-items: center;
       flex-direction: row-reverse;
@@ -87,15 +87,15 @@
         }
       }
     }
-    .header__line:not(:last-child) {
+    &__line:not(:last-child) {
       display: none;
     }
   }
   .best {
-    .best__flex {
+    &__flex {
       display: block;
     }
-    .best__card {
+    &__card {
       display: flex;
       flex-direction: column;
       max-width: none;
@@ -108,25 +108,23 @@
     }
   }
   .ideas {
-    .ideas__content {
+    &__content {
       display: block;
     }
     img {
       max-width: 90%;
     }
-    .ideas__text {
+    &__text {
       text-align: center;
     }
   }
   .search {
-    .search__input {
-    }
     input {
       max-width: 400px;
     }
   }
   .footer{
-    .footer__menu-list {
+    &__menu-list {
       margin: 0 !important;
       max-width: 250px;
     }
@@ -134,13 +132,13 @@
 }
 @media screen and (max-width: 768px) {
   .ideas {
-    .ideas__text {
+    &__text {
       margin-top: 20px;
       p:not(:first-child) {
         display: none;
       }
     }
-    .ideas__img {
+    &__img {
       margin-right: 0;
     }
   }
@@ -148,45 +146,49 @@
     input{
       padding: 15px;
     }
+    .btn-signup{
+      padding: 10px;
+    }
   }
   .footer {
-    .footer__flex {
+    &__flex {
       padding-bottom: 0;
       
     }
   }
 }
 @media screen and (max-width: 525px) {
+  img{
+    max-width: 50%;
+  }
   .header{
-    .header__title {
+    &__title {
       font-size: 50px;
       line-height: 50px;
       }
     
   }
   .search {
-    .search__input {
+    &__input {
     }
     input {
       max-width: 300px;
     }
   }
   .footer{
-    .footer__info {
+    &__info {
       margin-top: 20px;
       p {
         padding: 0;
       }
     }
-  }
-  .footer{
-    .footer__descr{
+    &r__descr{
       display: none;
     }
-    .footer__menu-list {
+    &__menu-list {
       margin: 0 !important;
     }
-    .footer__menu-item:not(:first-child){
+    &__menu-item:not(:first-child){
       display: none;
     }
   }
