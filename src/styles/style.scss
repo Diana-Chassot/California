@@ -3,6 +3,7 @@ body {
   font-family: "Readex Pro", sans-serif;
   font-size: 14px;
 }
+/* general  */
 .container {
   max-width: 1294px;
   margin: 0 auto;
@@ -13,7 +14,7 @@ img {
 }
 .section--container {
   margin-top: 75px ;
-  text-align: center ¨!important;
+  text-align: center;
 }
 .section__title {
   @include titlesH2();
@@ -129,10 +130,6 @@ img {
     .header__btn {
       margin-top: 30px;
     }
-
-    .header__img {
-    }
-
     .header__line--container {
       display: flex;
       justify-content: center;
@@ -143,7 +140,6 @@ img {
       transform: translateX(-50%);
       bottom: 26px;
     }
-
     .header__line {
       height: 2px;
       width: 194px;
@@ -158,11 +154,8 @@ img {
 }
 /* latest offers */
 .latest-offers {
-  .latest-offers__title {
-  }
-  .latest-offers__descr {
-  }
-  .latest-offers__grid {
+
+  &__grid {
     margin-top: 55px;
     display: grid;
     justify-content: center;
@@ -171,15 +164,15 @@ img {
     grid-column-gap: 16px;
     grid-row-gap: 72px;
   }
-  .latest-offers__item {
+  &__item {
     box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
     background-color: white;
     position: relative;
   }
-  .latest-offers__content {
+  &__content {
     position: absolute;
   }
-  .latest-offers__item-1 {
+  &__item-1 {
     grid-area: 1 / 1 / 3 / 2;
 
     img {
@@ -191,7 +184,7 @@ img {
       padding: 0 42px 0 405px;
     }
   }
-  .latest-offers__item-2 {
+  &__item-2 {
     grid-area: 1 / 2 / 4 / 3;
     height: 792px;
     img {
@@ -204,7 +197,7 @@ img {
       padding: 0 31px;
     }
   }
-  .latest-offers__item-3 {
+  &__item-3 {
     grid-area: 1 / 3 / 4 / 4;
     height: 792px;
     overflow: hidden;
@@ -217,7 +210,7 @@ img {
       padding: 0 40px;
     }
   }
-  .latest-offers__item-4 {
+  &__item-4 {
     grid-area: 3 / 1 / 4 / 2;
     img {
       padding-left: 42px;
@@ -229,41 +222,41 @@ img {
       top: 87px;
     }
   }
-  .latest-offers__item-title {
+  &__item-title {
     @include titleH4(15px);
   }
-  .latest-offers__item-descr {
+  &__item-descr {
     font-size: 32px;
     line-height: 38px;
   }
 }
 /* Most saled items */
 .most-saled {
-  .most-saled__flex {
+  &__flex {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 59px;
   }
-  .most-saled__card:not(:last-child) {
+  &__card:not(:last-child) {
     margin-right: 28.5px;
   }
-  .most-saled__card-image {
+  &__card-image {
     width: 303px;
     text-align: center;
   }
-  .most-saled__card-info {
+  &__card-info {
     width: 302.5px;
     margin-top: 32px;
   }
-  .most-saled__card-title {
+  &__card-title {
     @include titileH3;
   }
-  .most-saled__card-descr {
+  &__card-descr {
     @include text(14px);
     margin-top: 9px;
   }
-  .most-saled__crad-price {
+  &__crad-price {
     font-family: Inter;
     font-size: 18px;
     line-height: 22px;
@@ -272,27 +265,27 @@ img {
 }
 /* best */
 .best {
-  .best__flex {
+  &__flex {
     display: flex;
     text-align: center;
     margin-top: 56px;
   }
-  .best__card {
+  &__card {
     background-color: $color-pink--light;
     max-width: 413px;
     border-radius: 16px;
   }
-  .best__card:not(:last-child) {
+  &__card:not(:last-child) {
     margin-right: 27px;
   }
-  .best__card-descr {
+  &__card-descr {
     @include text(13px);
     margin-top: 41px;
   }
-  .best__card-title {
+  &__card-title {
     @include titleH5;
   }
-  .best__btn {
+  &__btn {
     margin-top: 30px;
     padding: 14px 63px;
   }
@@ -302,14 +295,14 @@ img {
 }
 /* ideas */
 .ideas {
-  .ideas__content {
+  &__content {
     margin-top: 56px;
     display: flex;
   }
-  .ideas__img {
+  &__img {
     margin-right: 51px;
   }
-  .ideas__text {
+  &__text {
     margin-top: 14px;
     font-family: Inter;
     font-size: 24px;
@@ -319,7 +312,7 @@ img {
       margin-top: 28px;
     }
   }
-  .ideas__all {
+  &__all {
     display: block;
     margin-top: 73px;
     font-family: Inter;
@@ -330,7 +323,7 @@ img {
 }
 /* search */
 .search {
-  .search__input {
+  &__input {
     position: relative;
     margin-top: 24px;
   }
@@ -344,23 +337,23 @@ img {
   input::placeholder {
     color: black;
   }
-  .search__icon {
+  &__icon {
     position: absolute;
     margin-left: 16.75px;
     top: 55%;
     transform: translateY(-50%);
   }
-  .search__keywords {
+  &__keywords {
     margin-top: 18px;
   }
-  .search__key--container {
+  &__key--container {
     display: flex;
     justify-content: center;
     margin-top: 7px;
     flex-wrap: wrap;
   }
 
-  .search__key {
+  &__key {
     display: block;
     padding: 12px 22px 13px;
     @include borderBtn;
@@ -376,15 +369,15 @@ img {
   border-radius: 16px;
   @include flexCenter(column);
 
-  .email__descr {
+  &__descr {
     font-family: Inter;
     font-size: 16px;
     line-height: 32px;
   }
-  .email__img {
+  &__img {
     margin-top: 14px;
   }
-  .email__label {
+  &__label {
     @include text(14px);
     margin-top: 14px;
     display: flex;
@@ -416,13 +409,13 @@ img {
   margin-top: 19px;
   border-top: 1px solid $color-green--light;
   background-color: rgba(248, 249, 250, 1);
-  .footer__flex {
+  &__flex {
     display: flex;
     padding-top: 40px;
     padding-bottom: 78px;
     flex-wrap: wrap;
   }
-  .footer__logo {
+  &__logo {
     max-width: 394px;
     margin-right: 28px;
     margin-top: 7px;
@@ -430,35 +423,34 @@ img {
   .logo {
     width: 181px;
   }
-  .footer__descr {
+  &__descr {
     padding-right: 90px;
     font-family: Inter;
     font-size: 16px;
     line-height: 19px;
     margin-top: 18.4px;
   }
-  .footer__menu {
+  &__menu {
     display: flex;
     flex-wrap: wrap;
   }
-  .footer__menu-list {
+  &__menu-list {
     width: 197px;
   }
-  .footer__menu-list:not(:last-child) {
+  &__menu-list:not(:last-child) {
     margin-right: 28px;
   }
-  .footer__menu-item {
-  }
-  .footer__menu-item:not(:first-child) {
+  
+  &__menu-item:not(:first-child) {
     margin-top: 14px;
     font-family: Inter;
     font-size: 17px;
     line-height: 22.6px;
   }
-  .footer__menu-title {
+  &__menu-title {
     @include titileH3;
   }
-  .footer__info {
+  &__info {
     border-top: 1px solid $color-green--light;
     display: flex;
     justify-content: space-between;
