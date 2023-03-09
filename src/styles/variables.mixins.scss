@@ -1,0 +1,43 @@
+/* mixins */
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  flex-wrap: wrap;
+}
+/* colors */
+$color-pink--light: rgba(248, 249, 250, 1);
+$color-green--light: rgba(220, 229, 226, 1);
+/* fonts */
+
+@mixin titlesH2 {
+  font-size: 42px;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+@mixin text($fontSize) {
+  font-size: $fontSize;
+  line-height: 16.5px;
+}
+@mixin titileH3 {
+  font-size: 22px;
+  line-height: 28px;
+}
+@mixin titleH4($fontSize) {
+  font-family: Inter;
+  font-size: $fontSize;
+  line-height: 19px;
+}
+@mixin titleH5() {
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+@mixin borderBtn(){
+  border: 1px solid rgba(197, 197, 197, 1);
+  border-radius: 100px;
+}
