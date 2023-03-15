@@ -41,7 +41,10 @@ function styles() {
     .pipe(order([
       'normalize.scss',
       'variables.mixins.scss',
-      'style.scss',
+      'general-style.scss',
+      'header.scss',
+      'main.scss',
+      'footer.scss',
       'media.scss'  
       ])) 
       .pipe(concat('main.min.css'))
@@ -104,7 +107,7 @@ const server = () => {
 };
 /* clean dist */
 function clearDist() {
-  return gulp.src(['dist/**/*'], {read: false, allowEmpty: true})
+  return gulp.src(['dist'], {read: false, allowEmpty: true})
     .pipe(clean());
 }
 

@@ -1,0 +1,33 @@
+@import "variables.mixins";
+/* general */
+body {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 14px;
+}
+.container {
+  max-width: 1294px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.section--container {
+  margin-top: 75px ;
+  text-align: center;
+}
+.section__title {
+  @include titlesH2();
+}
+.section__descr {
+  @include text(13px);
+  margin-top: 9px;
+}
+.btn--explore {
+  border: 1px solid;
+  border-radius: 200px;
+  padding: 14px 53px;
+  font-family: Inter;
+  font-size: 18px;
+}
+
