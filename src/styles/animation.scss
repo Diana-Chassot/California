@@ -1,0 +1,66 @@
+.section__title,
+.header__title {
+  animation: animation 3s infinite alternate;
+}
+input:focus{
+  outline: none;
+  box-shadow: 0px 0px 5px #999;
+}
+a:hover {
+  color: $color-dark-blue;
+}
+@keyframes animation {
+  from {
+    color: black;
+  }
+  to {
+    color: $color-dark-blue;
+  }
+}
+
+.latest-offers__item:hover,
+.best__card img:hover,
+.header__shop:hover,
+.header__search:hover,
+.header__line:hover,
+.arr:hover,
+.btn:hover,
+.most-saled__card:hover,
+.logo:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.header__info--active {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  .header__item:hover {
+    .arr-down {
+      display: inline;
+    }
+    span {
+      color: $color-blue;
+      cursor: pointer;
+    }
+  }
+.header__item:hover .header__sub-list {
+    display: flex;
+    animation: slide-down 0.3s ease forwards;
+  }
+  @keyframes slide-down {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: max-content;
+    }
+  }
+

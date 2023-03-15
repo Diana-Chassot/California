@@ -11,9 +11,10 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  overflow: hidden;
 }
 .section--container {
-  margin-top: 75px ;
+  margin-top: 75px;
   text-align: center;
 }
 .section__title {

@@ -84,6 +84,9 @@
       flex-wrap: wrap;
       margin-top: 59px;
     }
+    &__card{
+      display: block;
+    }
     &__card:not(:last-child) {
       margin-right: 28.5px;
     }
