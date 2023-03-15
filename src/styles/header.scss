@@ -27,8 +27,7 @@
       color: rgba(7, 8, 71, 1);
       display: none;
     }
-    
-  
+
     .header__item:active {
       color: $color-blue;
     }
@@ -40,15 +39,18 @@
       flex-direction: column;
       z-index: 999;
       position: absolute;
-      display: none;
+      display: none; 
       overflow: hidden;
-
+     
     }
     .header__sub-item {
       padding: 10px 60px 25px 20px;
       border-bottom: 1px solid $color-blue;
     }
-    
+    .header__sub-list--right {
+      left: 80px;
+      width: 200px;
+    }
     .header__search {
       margin-right: 17px;
       height: 24px;
@@ -59,10 +61,20 @@
       height: 24px;
       width: 24px;
     }
+    .arr--right{
+      margin-left: 10px;
+    }
     .nav__list {
       display: none;
+      flex-direction: column;
+      position: absolute;
+      width: 150px;
+      background-color: white;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      z-index: 999;
+      top: 100%;
     }
-    .bars {
+    .btn-bars {
       font-size: 14px;
       background-color: $color-green--light;
       width: 40px;
@@ -70,12 +82,12 @@
       color: white;
       display: none;
     }
-    .bars i.fa-bars {
+    .btn-bars i.fa-bars {
       transform: rotate(0deg);
       transition: transform 0.3s ease-in-out;
     }
 
-    .bars i.fa-plus {
+    .btn-bars i.fa-plus {
       font-size: 18px;
       transform: rotate(45deg);
       transition: transform 0.3s ease-in-out;
@@ -110,10 +122,9 @@
     .header__info--active {
       display: flex;
     }
-    .header__info--white{
+    .header__info--white {
       background-color: white;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-      
     }
     .header__title {
       font-size: 58px;
@@ -127,6 +138,7 @@
     }
     .header__btn {
       margin-top: 30px;
+      margin-bottom: 60px;
     }
     .header__line--container {
       display: flex;
@@ -146,7 +158,6 @@
       background-color: $color-dark-blue;
       opacity: 0.5;
     }
-    
     .header__line:not(:last-child) {
       margin-right: 34px;
     }

@@ -45,6 +45,7 @@ function styles() {
       'header.scss',
       'main.scss',
       'footer.scss',
+      'animation.scss',
       'media.scss'  
       ])) 
       .pipe(concat('main.min.css'))

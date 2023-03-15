@@ -3,6 +3,7 @@
   .container {
     padding: 0 10px;
   }
+  /* header */
   .header {
     &__content {
       background-color: transparent;
@@ -12,6 +13,7 @@
       }
     }
   }
+  /* offers */
   .latest-offers {
     &__grid {
       display: block;
@@ -35,6 +37,7 @@
       flex-direction: row-reverse;
     }
   }
+  /* most-saled */
   .most-saled {
     &__flex {
       justify-content: space-around;
@@ -43,6 +46,7 @@
       margin-right: 0;
     }
   }
+  /* footer */
   .footer {
     &__flex {
       flex-direction: column-reverse;
@@ -52,7 +56,9 @@
     }
   }
 }
+/* media 992px */
 @media screen and (max-width: 992px) {
+  /* header */
   .header {
     position: relative;
     &__menu {
@@ -62,15 +68,6 @@
       .header__list {
         display: none;
       }
-      .nav__list {
-        flex-direction: column;
-        position: absolute;
-        width: 200px;
-        background-color: white;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-        z-index: 999;
-        top: 100%;
-      }
       .header__item {
         margin: 10px;
       }
@@ -78,7 +75,7 @@
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
-        .bars {
+        .btn-bars {
           display: block;
         }
       }
@@ -92,6 +89,7 @@
       display: none;
     }
   }
+  /* best */
   .best {
     &__flex {
       display: block;
@@ -105,6 +103,7 @@
       margin-right: 0 !important;
     }
   }
+  /* ideas */
   .ideas {
     &__content {
       display: block;
@@ -116,11 +115,13 @@
       text-align: center;
     }
   }
+  /* search */
   .search {
     input {
       max-width: 400px;
     }
   }
+  /* footer */
   .footer {
     &__menu-list {
       margin: 10px 0 0 !important;
@@ -128,7 +129,9 @@
     }
   }
 }
+/* media 768px */
 @media screen and (max-width: 768px) {
+  /* ideas */
   .ideas {
     &__text {
       margin-top: 20px;
@@ -140,6 +143,7 @@
       margin-right: 0;
     }
   }
+  /* email */
   .email {
     input {
       padding: 15px;
@@ -148,13 +152,16 @@
       padding: 10px;
     }
   }
+  /* footer */
   .footer {
     &__flex {
       padding-bottom: 0;
     }
   }
 }
+/* media 525px */
 @media screen and (max-width: 525px) {
+  /* header */
   .header {
     .header__title {
       font-size: 50px;
@@ -164,6 +171,7 @@
       background-color: transparent;
     }
   }
+  /* search */
   .search {
     &__input {
     }
@@ -171,6 +179,7 @@
       max-width: 300px;
     }
   }
+  /* footer */
   .footer {
     &__info {
       margin-top: 20px;
