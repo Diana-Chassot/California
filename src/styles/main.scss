@@ -227,15 +227,14 @@
     margin-top: 14px;
   }
   &__label {
-    @include text(14px);
     margin-top: 14px;
     display: flex;
-    justify-content: space-between;
   }
   input {
     padding-left: 32px;
     background-color: $color-green--light;
-    padding: 16px 72px 17px 32px;
+    padding: 16px 10px 17px 32px;
+    width: 285px;
     border: 1px solid black;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;

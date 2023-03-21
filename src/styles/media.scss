@@ -143,15 +143,6 @@
       margin-right: 0;
     }
   }
-  /* email */
-  .email {
-    input {
-      padding: 15px;
-    }
-    .btn-signup {
-      padding: 10px;
-    }
-  }
   /* footer */
   .footer {
     &__flex {
@@ -173,10 +164,25 @@
   }
   /* search */
   .search {
-    &__input {
-    }
     input {
       max-width: 300px;
+    }
+  }
+  .email{
+    height: auto;
+    .email__label{
+      flex-direction: column;
+      align-items: center;
+    }
+    #email,
+    .btn-signup{
+      border-radius:90px;
+    }
+    #email{
+      max-width: 250px;
+    }
+    .btn-signup{
+      margin: 10px;
     }
   }
   /* footer */
