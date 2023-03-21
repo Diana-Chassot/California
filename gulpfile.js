@@ -5,7 +5,6 @@ const sass = require('gulp-sass')(require('sass'));
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-/* const cleanCSS = require('gulp-clean-css'); */
 const cssnano = require('gulp-cssnano');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
@@ -17,19 +16,19 @@ const newer = require('gulp-newer');
 const paths = {
   styles: {
     src: 'src/styles/**/*.scss',
-    dest: 'dist/styles/'
+    dest: 'docs/styles/'
   },
   scripts: {
     src: 'src/scripts/**/*.js',
-    dest: 'dist/scripts/'
+    dest: 'docs/scripts/'
   },
   html:{
     src:"index.html",
-    dest:"dist"
+    dest:"docs"
   },
   img:{
     src:"src/img/**/*.*",
-    dest: "dist/img/"
+    dest: "docs/img/"
   }
 };
 
@@ -51,7 +50,6 @@ function styles() {
       .pipe(concat('main.min.css'))
       .pipe(sass().on('error', sass.logError))
       .pipe(cssnano())
-     /*  .pipe(cleanCSS({ restructuring: false })) */
       .pipe(autoprefixer())
       .pipe(gulp.dest(paths.styles.dest))
       .pipe(browserSync.stream());
@@ -102,17 +100,17 @@ function watch() {
 const server = () => {
 	browserSync.init({
 		server: {
-			baseDir: "./dist/"
+			baseDir: "./docs/"
 		}
 	});
 };
 /* clean dist */
-function clearDist() {
-  return gulp.src(['dist'], {read: false, allowEmpty: true})
+function clearDocs() {
+  return gulp.src(['docs'], {read: false, allowEmpty: true})
     .pipe(clean());
 }
 
-exports.build = gulp.series(clearDist, html, styles, scripts,  img );
+exports.build = gulp.series(clearDocs, html, styles, scripts,  img );
 exports.dev = gulp.series(html, styles, scripts, img, gulp.parallel(server, watch)); 
 
 
