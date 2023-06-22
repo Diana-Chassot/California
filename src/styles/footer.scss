@@ -44,21 +44,6 @@
     &__menu-title {
       @include titileH3;
     }
-    &__info {
-      border-top: 1px solid $color-green--light;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      p {
-        padding: 57px 28px 0;
-        font-size: 18px;
-        line-height: 22px;
-      }
-      a {
-        font-family: Inter;
-        font-size: 18px;
-        line-height: 22px;
-      }
-    }
+    
   }
   

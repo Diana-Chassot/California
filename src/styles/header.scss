@@ -15,13 +15,14 @@
     .header__list {
       display: flex;
       flex-direction: row;
+      gap: 40px;
     }
     .header__item {
       text-transform: uppercase;
       font-family: Inter;
       line-height: 17px;
-      margin-right: 39px;
       position: relative;
+      padding: 10px;
     }
     .arr-down {
       color: rgba(7, 8, 71, 1);
